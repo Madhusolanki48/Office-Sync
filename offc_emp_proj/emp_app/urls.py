@@ -23,6 +23,7 @@ urlpatterns = [
     path('all/', views.all_emp, name='all_emp'),
     path('add/', views.add_emp, name='add_emp'),
     path('remove/', views.remove_emp, name='remove_emp'),
+    path('remove_emp/<int:emp_id>', views.remove_emp, name='remove_emp'),
     path('filter/', views.filter_emp, name='filter_emp'),
 ]
 
